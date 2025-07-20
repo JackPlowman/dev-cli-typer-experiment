@@ -6,3 +6,9 @@ requires-python = ">=3.13"
 dependencies = [
     "typer==0.16.0"
 ]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "ty"
+]
