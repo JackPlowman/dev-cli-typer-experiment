@@ -7,8 +7,18 @@ dependencies = [
     "typer==0.16.0"
 ]
 
+[project.scripts]
+dev-cli-typer-experiment = "main:app"
+
 [project.optional-dependencies]
 dev = [
     "ruff",
     "ty"
 ]
+
+[tool.uv]
+package = true
+
+[tool.uv.build-backend]
+requires = ["uv_build>=0.8.0,<0.9.0"]
+build-backend = "uv_build"
