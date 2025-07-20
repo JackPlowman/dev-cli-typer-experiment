@@ -16,3 +16,7 @@ pre-commit:
       run: just format-check
     Lefthook Validate:
       run: just lefthook-validate
+    Ruff Checks:
+      run: just ruff-checks
+    Ty Checks:
+      run: just ty-check
